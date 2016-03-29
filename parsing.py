@@ -84,8 +84,6 @@ for x in stuff:
     x=x.split(",")
     print x
 
-print stuff
-
 
 ##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
 ##FORMAT (Example)
