@@ -60,17 +60,19 @@ stuff = """
 
 stuff = stuff.replace("""<tr>""", " ");
 stuff = stuff.replace("""<td>""", " ");
-stuff = stuff.replace("""<td class="tba">""", "  ");
-stuff = stuff.replace("""<td class="tna">""", "  ");
-stuff = stuff.replace("""<td class="tnb">""", "  ");
-stuff = stuff.replace("""<td class="tbb">""", "  ");
-stuff = stuff.replace("""</td>""", " ");
-stuff = stuff.replace("""</tr>""", " ");
-stuff = stuff.replace("""<a name=""", "  ");
-stuff = stuff.replace("""></a>""", "  ");
+stuff = stuff.replace("""<td class="tba">""", "");
+stuff = stuff.replace("""<td class="tna">""", ",");
+stuff = stuff.replace("""<td class="tnb">""", ",");
+stuff = stuff.replace("""<td class="tbb">""", ",");
+stuff = stuff.replace("""</td>""", "");
+stuff = stuff.replace("""</tr>""", "");
+stuff = stuff.replace("""<a name=""", " ");
+stuff = stuff.replace("""></a>""", "");
 stuff = stuff.replace("""<a href=""", "  ");
 stuff = stuff.replace("""</a>""", "  ");
 stuff = stuff.replace("""<br>""", "  ");
+stuff = stuff.replace(""">""", "  ");
+#stuff = stuff.split("""\n""");
 
 
 ##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
