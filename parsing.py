@@ -58,20 +58,20 @@ stuff = """
 <tr><td class="tna">57</td><td class="tna"><a name="WY"></a><a href="WY-D">Wyoming</a></td><td class="tna">18.0</td><td class="tna">4.0</td><td class="tba">22.0</td><td class="tna">12 district / 4 at large; 2 Pledged PLEOs;<br>4 Unpledged PLEOs</td></tr>
 """
 
-stuff = stuff.replace("""<tr>""", "");
-stuff = stuff.replace("""<td>""", "");
-stuff = stuff.replace("""<td class="tba">""", "");
-stuff = stuff.replace("""<td class="tna">""", "");
-stuff = stuff.replace("""<td class="tnb">""", "");
-stuff = stuff.replace("""<td class="tbb">""", "");
-stuff = stuff.replace("""</td>""", "");
-stuff = stuff.replace("""</tr>""", "");
-stuff = stuff.replace("""<a name=""", "");
-stuff = stuff.replace("""></a>""", "");
-stuff = stuff.replace("""<a href=""", "");
-stuff = stuff.replace("""</a>""", "");
-stuff = stuff.replace("""<br>""", "");
-stuff = stuff.replace(""";""", "");
+stuff = stuff.replace("""<tr>""", " ");
+stuff = stuff.replace("""<td>""", " ");
+stuff = stuff.replace("""<td class="tba">""", "  ");
+stuff = stuff.replace("""<td class="tna">""", "  ");
+stuff = stuff.replace("""<td class="tnb">""", "  ");
+stuff = stuff.replace("""<td class="tbb">""", "  ");
+stuff = stuff.replace("""</td>""", " ");
+stuff = stuff.replace("""</tr>""", " ");
+stuff = stuff.replace("""<a name=""", "  ");
+stuff = stuff.replace("""></a>""", "  ");
+stuff = stuff.replace("""<a href=""", "  ");
+stuff = stuff.replace("""</a>""", "  ");
+stuff = stuff.replace("""<br>""", "  ");
+
 
 ##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
 ##FORMAT (Example)
