@@ -1,7 +1,7 @@
 
 //<!-- SVG Size -->
 
-var w = 1280,
+var w = 2000,
     h = 800;
 
 //LIST OF DEMOCRAT DATA
