@@ -1,11 +1,18 @@
 # SNL
 
 ## Description
-Visualization of Delegates for 2012 Election
-Allocated and Unallocated Delegates for each state in the election
+Visualization of Delegates for each state in the 2012 Election
+
+For Democrats and Republicans
+
+Model made of blue and red circles, sized according to the delegate number
+
+Circle bounce around mouse for interactivity
+
 
 ## Data Sources
 http://www.thegreenpapers.com/P12/D-Del.phtml
+
 http://www.thegreenpapers.com/P12/R-Del.phtml
 
 ## JS Model

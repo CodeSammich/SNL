@@ -1,3 +1,6 @@
+##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
+##SOURCE: http://www.thegreenpapers.com/P12/R-Del.phtml
+
 stuff = """
 <tr><td class="tna">1</td><td class="tna"><a name="AL"></a><a href="AL-D">Alabama</a></td><td class="tna">63.0</td><td class="tna">6.0</td><td class="tba">69.0</td><td class="tna">41 district / 14 at large; 8 Pledged PLEOs;<br>6 Unpledged PLEOs</td></tr>
 <tr><td class="tnb">2</td><td class="tnb"><a name="AK"></a><a href="AK-D">Alaska</a></td><td class="tnb">19.0</td><td class="tnb">5.0</td><td class="tbb">24.0</td><td class="tnb">12 district / 5 at large; 2 Pledged PLEOs;<br>5 Unpledged PLEOs</td></tr>
@@ -84,22 +87,10 @@ for x in stuff:
     carot = x.find("^")
     x=x[carot+1::]
     x=x.split(",")
-<<<<<<< HEAD
- #   print x
-=======
     #print x
     toprint.append(x)
 
-print toprint
->>>>>>> b51040c603f46684f681a8e624ff8d2c5d6daca2
-
-
-##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
-##FORMAT (Example)
-##41 district / 14 at large; 8 Pledged PLEOs;
-##6 Unpledged PLEOs
-
-#print stuff
+#print toprint
 
 repubs = '''<tr><td class="tna">1</td><td class="tna"><a name="AL"></a><a href="AL-R">Alabama</a></td><td class="tna">47</td><td class="tna">3</td><td class="tba">50</td><td class="tna">10 base at-large / 21 re: 7 congressional districts / 3 party / 16 bonus</td></tr>
 <tr><td class="tnb">2</td><td class="tnb"><a name="AK"></a><a href="AK-R">Alaska</a></td><td class="tnb">24</td><td class="tnb">3</td><td class="tbb">27</td><td class="tnb">10 base at-large / 3 re: 1 congressional district / 3 party / 11 bonus</td></tr>
@@ -183,4 +174,12 @@ for x in repubs:
     carot = x.find("^")
     x=x[carot+1::]
     x=x.split(",")
-    print x
+    n = 0;
+    while(n<len(x)):
+        if (x[n] == "&nbsp;"):
+            x[n] = '0'
+        n+=1;
+    #print x
+    toprint.append(x)
+
+print toprint
