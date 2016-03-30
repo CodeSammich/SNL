@@ -74,6 +74,8 @@ stuff = stuff.replace("""<br>""", "");
 stuff = stuff.replace(""">""", "^");
 stuff = stuff.split("""\n""");
 
+toprint = []
+
 for x in stuff:
     lastcomma = x.rfind(",")
     x = x[0:lastcomma]
@@ -82,7 +84,10 @@ for x in stuff:
     carot = x.find("^")
     x=x[carot+1::]
     x=x.split(",")
-    print x
+    #print x
+    toprint.append(x)
+
+print toprint
 
 
 ##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
