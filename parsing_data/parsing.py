@@ -166,6 +166,8 @@ repubs = repubs.replace(""">""", "^");
 repubs = repubs.replace(""" '&nbsp; """, '');
 repubs = repubs.split( "\n");
 
+toprint=[]
+
 for x in repubs:
     lastcomma = x.rfind(",")
     x = x[0:lastcomma]
