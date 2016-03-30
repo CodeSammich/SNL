@@ -7,8 +7,7 @@ For Democrats and Republicans
 
 Model made of blue and red circles, sized according to the delegate number
 
-Circle bounce around mouse for interactivity
-
+Circles bounce around mouse for interactivity
 
 ## Data Sources
 http://www.thegreenpapers.com/P12/D-Del.phtml
@@ -16,4 +15,4 @@ http://www.thegreenpapers.com/P12/D-Del.phtml
 http://www.thegreenpapers.com/P12/R-Del.phtml
 
 ## JS Model
-https://mbostock.github.io/d3/talk/20111018/collision.html
+Credit and Inspiration to: https://mbostock.github.io/d3/talk/20111018/collision.html
