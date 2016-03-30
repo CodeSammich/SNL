@@ -82,7 +82,7 @@ for x in stuff:
     carot = x.find("^")
     x=x[carot+1::]
     x=x.split(",")
-    print x
+ #   print x
 
 
 ##SOURCE: http://www.thegreenpapers.com/P12/D-Del.phtml
@@ -91,3 +91,87 @@ for x in stuff:
 ##6 Unpledged PLEOs
 
 #print stuff
+
+repubs = '''<tr><td class="tna">1</td><td class="tna"><a name="AL"></a><a href="AL-R">Alabama</a></td><td class="tna">47</td><td class="tna">3</td><td class="tba">50</td><td class="tna">10 base at-large / 21 re: 7 congressional districts / 3 party / 16 bonus</td></tr>
+<tr><td class="tnb">2</td><td class="tnb"><a name="AK"></a><a href="AK-R">Alaska</a></td><td class="tnb">24</td><td class="tnb">3</td><td class="tbb">27</td><td class="tnb">10 base at-large / 3 re: 1 congressional district / 3 party / 11 bonus</td></tr>
+<tr><td class="tna">3</td><td class="tna"><a name="AS"></a><a href="AS-R">American Samoa</a></td><td class="tna">&nbsp;</td><td class="tna">9</td><td class="tba">9</td><td class="tna">6 base at-large / 3 party</td></tr>
+<tr><td class="tnb">4</td><td class="tnb"><a name="AZ"></a><a href="AZ-R">Arizona</a></td><td class="tnb">29</td><td class="tnb">&nbsp;</td><td class="tbb">29</td><td class="tnb">penalty: 50% of 58 [10 base at-large / 27 re: 9 congressional districts / 3 party / 18 bonus]</td></tr>
+<tr><td class="tna">5</td><td class="tna"><a name="AR"></a><a href="AR-R">Arkansas</a></td><td class="tna">33</td><td class="tna">3</td><td class="tba">36</td><td class="tna">10 base at-large / 12 re: 4 congressional districts / 3 party / 11 bonus</td></tr>
+<tr><td class="tnb">6</td><td class="tnb"><a name="CA"></a><a href="CA-R">California</a></td><td class="tnb">169</td><td class="tnb">3</td><td class="tbb">172</td><td class="tnb">10 base at-large / 159 re: 53 congressional districts / 3 party</td></tr>
+<tr><td class="tna">7</td><td class="tna"><a name="CO"></a><a href="CO-R">Colorado</a></td><td class="tna">36</td><td class="tna">&nbsp;</td><td class="tba">36</td><td class="tna">10 base at-large / 21 re: 7 congressional districts / 3 party / 2 bonus</td></tr>
+<tr><td class="tnb">8</td><td class="tnb"><a name="CT"></a><a href="CT-R">Connecticut</a></td><td class="tnb">25</td><td class="tnb">3</td><td class="tbb">28</td><td class="tnb">10 base at-large / 15 re: 5 congressional districts / 3 party</td></tr>
+<tr><td class="tna">9</td><td class="tna"><a name="DE"></a><a href="DE-R">Delaware</a></td><td class="tna">17</td><td class="tna">&nbsp;</td><td class="tba">17</td><td class="tna">10 base at-large / 3 re: 1 congressional district / 3 party / 1 bonus</td></tr>
+<tr><td class="tnb">10</td><td class="tnb"><a name="DC"></a><a href="DC-R">District of Columbia</a></td><td class="tnb">16</td><td class="tnb">3</td><td class="tbb">19</td><td class="tnb">16 base at-large / 3 party</td></tr>
+<tr><td class="tna">11</td><td class="tna"><a name="FL"></a><a href="FL-R">Florida</a></td><td class="tna">50</td><td class="tna">&nbsp;</td><td class="tba">50</td><td class="tna">penalty: 50% of 99 [10 base at-large / 81 re: 27 congressional districts / 3 party / 5 bonus]</td></tr>
+<tr><td class="tnb">12</td><td class="tnb"><a name="GA"></a><a href="GA-R">Georgia</a></td><td class="tnb">76</td><td class="tnb">&nbsp;</td><td class="tbb">76</td><td class="tnb">10 base at-large / 42 re: 14 congressional districts / 3 party / 21 bonus</td></tr>
+<tr><td class="tna">13</td><td class="tna"><a name="GU"></a><a href="GU-R">Guam</a></td><td class="tna">&nbsp;</td><td class="tna">9</td><td class="tba">9</td><td class="tna">6 base at-large / 3 party</td></tr>
+<tr><td class="tnb">14</td><td class="tnb"><a name="HI"></a><a href="HI-R">Hawaii</a></td><td class="tnb">17</td><td class="tnb">3</td><td class="tbb">20</td><td class="tnb">10 base at-large / 6 re: 2 congressional districts / 3 party / 1 bonus</td></tr>
+<tr><td class="tna">15</td><td class="tna"><a name="ID"></a><a href="ID-R">Idaho</a></td><td class="tna">32</td><td class="tna">&nbsp;</td><td class="tba">32</td><td class="tna">10 base at-large / 6 re: 2 congressional districts / 3 party / 13 bonus</td></tr>
+<tr><td class="tnb">16</td><td class="tnb"><a name="IL"></a><a href="IL-R">Illinois</a></td><td class="tnb">54</td><td class="tnb">15</td><td class="tbb">69</td><td class="tnb">10 base at-large / 54 re: 18 congressional districts / 3 party / 2 bonus</td></tr>
+<tr><td class="tna">17</td><td class="tna"><a name="IN"></a><a href="IN-R">Indiana</a></td><td class="tna">27</td><td class="tna">19</td><td class="tba">46</td><td class="tna">10 base at-large / 27 re: 9 congressional districts / 3 party / 6 bonus</td></tr>
+<tr><td class="tnb">18</td><td class="tnb"><a name="IA"></a><a href="IA-R">Iowa</a></td><td class="tnb">&nbsp;</td><td class="tnb">28</td><td class="tbb">28</td><td class="tnb">10 base at-large / 12 re: 4 congressional districts / 3 party / 3 bonus</td></tr>
+<tr><td class="tna">19</td><td class="tna"><a name="KS"></a><a href="KS-R">Kansas</a></td><td class="tna">40</td><td class="tna">&nbsp;</td><td class="tba">40</td><td class="tna">10 base at-large / 12 re: 4 congressional districts / 3 party / 15 bonus</td></tr>
+<tr><td class="tnb">20</td><td class="tnb"><a name="KY"></a><a href="KY-R">Kentucky</a></td><td class="tnb">42</td><td class="tnb">3</td><td class="tbb">45</td><td class="tnb">10 base at-large / 18 re: 6 congressional districts / 3 party / 14 bonus</td></tr>
+<tr><td class="tna">21</td><td class="tna"><a name="LA"></a><a href="LA-R">Louisiana</a></td><td class="tna">20</td><td class="tna">26</td><td class="tba">46</td><td class="tna">10 base at-large / 18 re: 6 congressional districts / 3 party / 15 bonus</td></tr>
+<tr><td class="tnb">22</td><td class="tnb"><a name="ME"></a><a href="ME-R">Maine</a></td><td class="tnb">&nbsp;</td><td class="tnb">24</td><td class="tbb">24</td><td class="tnb">10 base at-large / 6 re: 2 congressional districts / 3 party / 5 bonus</td></tr>
+<tr><td class="tna">23</td><td class="tna"><a name="MD"></a><a href="MD-R">Maryland</a></td><td class="tna">37</td><td class="tna">&nbsp;</td><td class="tba">37</td><td class="tna">10 base at-large / 24 re: 8 congressional districts / 3 party</td></tr>
+<tr><td class="tnb">24</td><td class="tnb"><a name="MA"></a><a href="MA-R">Massachusetts</a></td><td class="tnb">38</td><td class="tnb">3</td><td class="tbb">41</td><td class="tnb">10 base at-large / 27 re: 9 congressional districts / 3 party / 1 bonus</td></tr>
+<tr><td class="tna">25</td><td class="tna"><a name="MI"></a><a href="MI-R">Michigan</a></td><td class="tna">30</td><td class="tna">&nbsp;</td><td class="tba">30</td><td class="tna">penalty: 50% of 59 [10 base at-large / 42 re: 14 congressional districts / 3 party / 4 bonus]</td></tr>
+<tr><td class="tnb">26</td><td class="tnb"><a name="MN"></a><a href="MN-R">Minnesota</a></td><td class="tnb">&nbsp;</td><td class="tnb">40</td><td class="tbb">40</td><td class="tnb">10 base at-large / 24 re: 8 congressional districts / 3 party / 3 bonus</td></tr>
+<tr><td class="tna">27</td><td class="tna"><a name="MS"></a><a href="MS-R">Mississippi</a></td><td class="tna">37</td><td class="tna">3</td><td class="tba">40</td><td class="tna">10 base at-large / 12 re: 4 congressional districts / 3 party / 15 bonus</td></tr>
+<tr><td class="tnb">28</td><td class="tnb"><a name="MO"></a><a href="MO-R">Missouri</a></td><td class="tnb">49</td><td class="tnb">3</td><td class="tbb">52</td><td class="tnb">10 base at-large / 24 re: 8 congressional districts / 3 party / 15 bonus</td></tr>
+<tr><td class="tna">29</td><td class="tna"><a name="MT"></a><a href="MT-R">Montana</a></td><td class="tna">&nbsp;</td><td class="tna">26</td><td class="tba">26</td><td class="tna">10 base at-large / 3 re: 1 congressional district / 3 party / 10 bonus</td></tr>
+<tr><td class="tnb">30</td><td class="tnb"><a name="NE"></a><a href="NE-R">Nebraska</a></td><td class="tnb">32</td><td class="tnb">3</td><td class="tbb">35</td><td class="tnb">10 base at-large / 9 re: 3 congressional districts / 3 party / 13 bonus</td></tr>
+<tr><td class="tna">31</td><td class="tna"><a name="NV"></a><a href="NV-R">Nevada</a></td><td class="tna">28</td><td class="tna">&nbsp;</td><td class="tba">28</td><td class="tna">10 base at-large / 12 re: 4 congressional districts / 3 party / 3 bonus</td></tr>
+<tr><td class="tnb">32</td><td class="tnb"><a name="NH"></a><a href="NH-R">New Hampshire</a></td><td class="tnb">12</td><td class="tnb">&nbsp;</td><td class="tbb">12</td><td class="tnb">penalty: 50% of 23 [10 base at-large / 6 re: 2 congressional districts / 3 party / 4 bonus]</td></tr>
+<tr><td class="tna">33</td><td class="tna"><a name="NJ"></a><a href="NJ-R">New Jersey</a></td><td class="tna">50</td><td class="tna">&nbsp;</td><td class="tba">50</td><td class="tna">10 base at-large / 36 re: 12 congressional districts / 3 party / 1 bonus</td></tr>
+<tr><td class="tnb">34</td><td class="tnb"><a name="NM"></a><a href="NM-R">New Mexico</a></td><td class="tnb">20</td><td class="tnb">3</td><td class="tbb">23</td><td class="tnb">10 base at-large / 9 re: 3 congressional districts / 3 party / 1 bonus</td></tr>
+<tr><td class="tna">35</td><td class="tna"><a name="NY"></a><a href="NY-R">New York</a></td><td class="tna">92</td><td class="tna">3</td><td class="tba">95</td><td class="tna">10 base at-large / 81 re: 27 congressional districts / 3 party / 1 bonus</td></tr>
+<tr><td class="tnb">36</td><td class="tnb"><a name="NC"></a><a href="NC-R">North Carolina</a></td><td class="tnb">52</td><td class="tnb">3</td><td class="tbb">55</td><td class="tnb">10 base at-large / 39 re: 13 congressional districts / 3 party / 3 bonus</td></tr>
+<tr><td class="tna">37</td><td class="tna"><a name="ND"></a><a href="ND-R">North Dakota</a></td><td class="tna">&nbsp;</td><td class="tna">28</td><td class="tba">28</td><td class="tna">10 base at-large / 3 re: 1 congressional district / 3 party / 12 bonus</td></tr>
+<tr><td class="tnb">38</td><td class="tnb"><a name="MP"></a><a href="MP-R">Northern Marianas</a></td><td class="tnb">&nbsp;</td><td class="tnb">9</td><td class="tbb">9</td><td class="tnb">6 base at-large / 3 party</td></tr>
+<tr><td class="tna">39</td><td class="tna"><a name="OH"></a><a href="OH-R">Ohio</a></td><td class="tna">63</td><td class="tna">3</td><td class="tba">66</td><td class="tna">10 base at-large / 48 re: 16 congressional districts / 3 party / 5 bonus</td></tr>
+<tr><td class="tnb">40</td><td class="tnb"><a name="OK"></a><a href="OK-R">Oklahoma</a></td><td class="tnb">40</td><td class="tnb">3</td><td class="tbb">43</td><td class="tnb">10 base at-large / 15 re: 5 congressional districts / 3 party / 15 bonus</td></tr>
+<tr><td class="tna">41</td><td class="tna"><a name="OR"></a><a href="OR-R">Oregon</a></td><td class="tna">25</td><td class="tna">3</td><td class="tba">28</td><td class="tna">10 base at-large / 15 re: 5 congressional districts / 3 party</td></tr>
+<tr><td class="tnb">42</td><td class="tnb"><a name="PA"></a><a href="PA-R">Pennsylvania</a></td><td class="tnb">&nbsp;</td><td class="tnb">72</td><td class="tbb">72</td><td class="tnb">10 base at-large / 54 re: 18 congressional districts / 3 party / 5 bonus</td></tr>
+<tr><td class="tna">43</td><td class="tna"><a name="PR"></a><a href="PR-R">Puerto Rico</a></td><td class="tna">20</td><td class="tna">3</td><td class="tba">23</td><td class="tna">20 base at-large / 3 party</td></tr>
+<tr><td class="tnb">44</td><td class="tnb"><a name="RI"></a><a href="RI-R">Rhode Island</a></td><td class="tnb">16</td><td class="tnb">3</td><td class="tbb">19</td><td class="tnb">10 base at-large / 6 re: 2 congressional districts / 3 party</td></tr>
+<tr><td class="tna">45</td><td class="tna"><a name="SC"></a><a href="SC-R">South Carolina</a></td><td class="tna">25</td><td class="tna">&nbsp;</td><td class="tba">25</td><td class="tna">penalty: 50% of 50 [10 base at-large / 21 re: 7 congressional districts / 3 party / 16 bonus]</td></tr>
+<tr><td class="tnb">46</td><td class="tnb"><a name="SD"></a><a href="SD-R">South Dakota</a></td><td class="tnb">25</td><td class="tnb">3</td><td class="tbb">28</td><td class="tnb">10 base at-large / 3 re: 1 congressional district / 3 party / 12 bonus</td></tr>
+<tr><td class="tna">47</td><td class="tna"><a name="TN"></a><a href="TN-R">Tennessee</a></td><td class="tna">55</td><td class="tna">3</td><td class="tba">58</td><td class="tna">10 base at-large / 27 re: 9 congressional districts / 3 party / 18 bonus</td></tr>
+<tr><td class="tnb">48</td><td class="tnb"><a name="TX"></a><a href="TX-R">Texas</a></td><td class="tnb">152</td><td class="tnb">3</td><td class="tbb">155</td><td class="tnb">10 base at-large / 108 re: 36 congressional districts / 3 party / 34 bonus</td></tr>
+<tr><td class="tna">49</td><td class="tna"><a name="UT"></a><a href="UT-R">Utah</a></td><td class="tna">40</td><td class="tna">&nbsp;</td><td class="tba">40</td><td class="tna">10 base at-large / 12 re: 4 congressional districts / 3 party / 15 bonus</td></tr>
+<tr><td class="tnb">50</td><td class="tnb"><a name="VT"></a><a href="VT-R">Vermont</a></td><td class="tnb">17</td><td class="tnb">&nbsp;</td><td class="tbb">17</td><td class="tnb">10 base at-large / 3 re: 1 congressional district / 3 party / 1 bonus</td></tr>
+<tr><td class="tna">51</td><td class="tna"><a name="VI"></a><a href="VI-R">Virgin Islands</a></td><td class="tna">6</td><td class="tna">3</td><td class="tba">9</td><td class="tna">6 base at-large / 3 party</td></tr>
+<tr><td class="tnb">52</td><td class="tnb"><a name="VA"></a><a href="VA-R">Virginia</a></td><td class="tnb">46</td><td class="tnb">3</td><td class="tbb">49</td><td class="tnb">10 base at-large / 33 re: 11 congressional districts / 3 party / 3 bonus</td></tr>
+<tr><td class="tna">53</td><td class="tna"><a name="WA"></a><a href="WA-R">Washington</a></td><td class="tna">40</td><td class="tna">3</td><td class="tba">43</td><td class="tna">10 base at-large / 30 re: 10 congressional districts / 3 party</td></tr>
+<tr><td class="tnb">54</td><td class="tnb"><a name="WV"></a><a href="WV-R">West Virginia</a></td><td class="tnb">28</td><td class="tnb">3</td><td class="tbb">31</td><td class="tnb">10 base at-large / 9 re: 3 congressional districts / 3 party / 9 bonus</td></tr>
+<tr><td class="tna">55</td><td class="tna"><a name="WI"></a><a href="WI-R">Wisconsin</a></td><td class="tna">42</td><td class="tna">&nbsp;</td><td class="tba">42</td><td class="tna">10 base at-large / 24 re: 8 congressional districts / 3 party / 5 bonus</td></tr>
+<tr><td class="tnb">56</td><td class="tnb"><a name="WY"></a><a href="WY-R">Wyoming</a></td><td class="tnb">&nbsp;</td><td class="tnb">29</td><td class="tbb">29</td><td class="tnb">10 base at-large / 3 re: 1 congressional district / 3 party / 13 bonus</td></tr>'''
+
+repubs = repubs.replace("""<tr>""", ",");
+repubs = repubs.replace("""<td>""", ",");
+repubs = repubs.replace("""<td class="tba">""", ",");
+repubs = repubs.replace("""<td class="tna">""", ",");
+repubs = repubs.replace("""<td class="tnb">""", ",");
+repubs = repubs.replace("""<td class="tbb">""", ",");
+repubs = repubs.replace("""</td>""", "");
+repubs = repubs.replace("""</tr>""", "");
+repubs = repubs.replace("""<a name=""", "");
+repubs = repubs.replace("""></a>""", "");
+repubs = repubs.replace("""<a href=""", "");
+repubs = repubs.replace("""</a>""", "");
+repubs = repubs.replace("""<br>""", "");
+repubs = repubs.replace(""">""", "^");
+repubs = repubs.replace(""" '&nbsp; """, '');
+repubs = repubs.split( "\n");
+
+for x in repubs:
+    lastcomma = x.rfind(",")
+    x = x[0:lastcomma]
+    firstcomma = x.find(",")
+    x=x[firstcomma+1::]
+    carot = x.find("^")
+    x=x[carot+1::]
+    x=x.split(",")
+    print x
