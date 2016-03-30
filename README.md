@@ -14,5 +14,7 @@ http://www.thegreenpapers.com/P12/D-Del.phtml
 
 http://www.thegreenpapers.com/P12/R-Del.phtml
 
+![alt tag](img/sample.png)
+
 ## JS Model
 Credit and Inspiration to: https://mbostock.github.io/d3/talk/20111018/collision.html
